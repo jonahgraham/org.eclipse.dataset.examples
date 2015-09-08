@@ -23,8 +23,7 @@ import org.eclipse.dataset.slicer.Slicer;
 import org.junit.Test;
 
 /**
- * @see the full slicing unit tests in plugin    uk.ac.diamond.scisoft.analysis.test
- *                                     package   uk/ac/diamond/scisoft/analysis/dataset
+ * @see the full slicing unit tests in org.eclipse.dataset.test/src/uk/ac/diamond/scisoft/analysis/dataset/Slice*.java
  * @author Matthew Gerring
  *
  */
