@@ -22,6 +22,7 @@ import org.eclipse.dataset.DatasetFactory;
 import org.eclipse.dataset.DatasetUtils;
 import org.eclipse.dataset.DoubleDataset;
 import org.eclipse.dataset.IDataset;
+import org.eclipse.dataset.IntegerDataset;
 import org.eclipse.dataset.LinearAlgebra;
 import org.eclipse.dataset.Maths;
 import org.eclipse.dataset.Random;
@@ -312,8 +313,11 @@ public class NumpyExamples {
     @Test
     public void matrixTest2() {
     	Dataset v = Random.rand(3);
-    	Dataset nz = Comparisons.nonZero(Comparisons.greaterThan(v, 0.5)).get(0);
-    	System.out.println("" + a.getByIndexes(null, nz));
+    	List<IntegerDataset> nonZero = Comparisons.nonZero(Comparisons.greaterThan(v, 0.5));
+    	if (nonZero.size() > 0) {
+        	Dataset nz = nonZero.get(0);
+        	System.out.println("" + a.getByIndexes(null, nz));
+    	}
     }
     
     
