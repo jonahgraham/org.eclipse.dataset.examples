@@ -684,7 +684,6 @@ public class NumpyExamples {
     /**eigenvalues and eigenvectors of a
      * [V,D]=eig(a)                   D,V = linalg.eig(a)
      */
-	@Ignore("Test disabled, eigen decomposition of assymetric matrices not supported yet, requires Math3")
     @Test
     public void eigen() {
     	
@@ -717,7 +716,6 @@ public class NumpyExamples {
     /**Conjugate gradients solver
      * conjgrad                      Sci.linalg.cg
      */
-    @Ignore("calcConjugateGradient requires Apache Commons Math3")
     @Test
     public void conjGrad() {
     	
